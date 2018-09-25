@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/hadis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/counter"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"
-        android:fontFamily="serif"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/hadis"
         android:textAlignment="center"
-        android:textSize="16sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:fontFamily="serif" />
 
     <LinearLayout
+        android:id="@+id/counter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,13 +41,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8sp"
+                style="@style/headings"
                 android:text="Subhanallah"
-                android:textSize="16sp" />
+                />
 
             <TextView
+                android:id="@+id/sub_counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8sp"
@@ -46,23 +56,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:gravity="center">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minWidth="0dp"
-                    android:text="-" />
+                    android:id="@+id/minus_SubAllah"
+                    style="@style/buttons_red" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="16dp"
-                    android:text="+"
-                    android:textColor="@android:color/white"
-                    android:textSize="32sp" />
+                    android:id="@+id/plus_SubAllah"
+                    style="@style/buttons_blue" />
             </LinearLayout>
         </LinearLayout>
 
@@ -74,13 +77,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8sp"
-                android:text="Elhamdulillah"
-                android:textSize="16sp" />
+                style="@style/headings"
+                android:text="Elhamdulillah" />
 
             <TextView
+                android:id="@+id/elh_counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8sp"
@@ -90,23 +91,17 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:gravity="center">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minWidth="0dp"
-                    android:text="-" />
+                    android:id="@+id/minus_ElhAllah"
+                    style="@style/buttons_red"
+                    />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="16dp"
-                    android:text="+"
-                    android:textColor="@android:color/white"
-                    android:textSize="32sp" />
+                    android:id="@+id/plus_ElhAllah"
+                    style="@style/buttons_blue" />
             </LinearLayout>
         </LinearLayout>
 
@@ -118,13 +113,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8sp"
-                android:text="Allahu Ekber"
-                android:textSize="16sp" />
+                style="@style/headings"
+                android:text="Allahu Ekber" />
 
             <TextView
+                android:id="@+id/alla_counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8sp"
@@ -134,23 +127,17 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:gravity="center">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minWidth="0dp"
-                    android:text="-" />
+                    android:id="@+id/minus_AllEkber"
+                    style="@style/buttons_red"
+                    />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="16dp"
-                    android:text="+"
-                    android:textColor="@android:color/white"
-                    android:textSize="32sp" />
+                    android:id="@+id/plus_AllEkber"
+                    style="@style/buttons_blue" />
             </LinearLayout>
         </LinearLayout>
 
